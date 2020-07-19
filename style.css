@@ -34,11 +34,12 @@ h1 {
   border-style: solid;
   border-width: 2px;
   border-radius: 8px;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 #message {
   margin-right: 5px;
+  font-family: "Orbitron", sans-serif;
 }
 
 button {

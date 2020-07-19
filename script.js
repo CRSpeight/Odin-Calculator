@@ -33,6 +33,18 @@ function operate(num1, operator, num2) {
   }
 }
 
+const message = document.querySelector("#message");
+let currMessage = "0";
+
+function messageUpdater(str) {
+  if (currMessage == "0") {
+    currMessage = str;
+  } else {
+    currMessage += str;
+  }
+  message.textContent = currMessage;
+}
+
 const calcBody = document.querySelector("#calcBody");
 
 const buttons = [
@@ -59,5 +71,13 @@ buttons.forEach(function (button) {
   btn.textContent = button.displayName;
   btn.classList.add(button.type);
   btn.style.gridArea = button.cssName;
+  switch (button.type) {
+    case "digit":
+      btn.addEventListener("click", (e) => messageUpdater(button.displayName));
+      break;
+    default:
+      break;
+  }
+
   calcBody.appendChild(btn);
 });
