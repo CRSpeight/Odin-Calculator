@@ -39,7 +39,6 @@ h1 {
 
 #message {
   margin-right: 5px;
-  font-family: "Orbitron", sans-serif;
 }
 
 button {
@@ -52,6 +51,7 @@ button {
   -webkit-box-shadow: inset 0px 0px 5px 7px rgba(0, 0, 0, 0.19);
   box-shadow: inset 0px 0px 5px 7px rgba(0, 0, 0, 0.19);
   font-weight: bold;
+  font-family: "Orbitron", sans-serif;
 }
 
 button:focus {
