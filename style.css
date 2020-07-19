@@ -1,6 +1,6 @@
 #calcBody {
   background-color: rgb(68, 68, 68);
-  width: 50%;
+  width: 40rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 20px 1fr 1fr;
