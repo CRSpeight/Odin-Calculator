@@ -45,6 +45,11 @@ function messageUpdater(str) {
   message.textContent = currMessage;
 }
 
+function clearMessage() {
+  currMessage = "0";
+  message.textContent = currMessage;
+}
+
 const calcBody = document.querySelector("#calcBody");
 
 const buttons = [
@@ -74,6 +79,9 @@ buttons.forEach(function (button) {
   switch (button.type) {
     case "digit":
       btn.addEventListener("click", (e) => messageUpdater(button.displayName));
+      break;
+    case "clear":
+      btn.addEventListener("click", (e) => clearMessage());
       break;
     default:
       break;
