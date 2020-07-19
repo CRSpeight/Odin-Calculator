@@ -32,3 +32,32 @@ function operate(num1, operator, num2) {
       console.log("Derp");
   }
 }
+
+const calcBody = document.querySelector("#calcBody");
+
+const buttons = [
+  { displayName: "1", cssName: "one", type: "digit" },
+  { displayName: "2", cssName: "two", type: "digit" },
+  { displayName: "3", cssName: "three", type: "digit" },
+  { displayName: "4", cssName: "four", type: "digit" },
+  { displayName: "5", cssName: "five", type: "digit" },
+  { displayName: "6", cssName: "six", type: "digit" },
+  { displayName: "7", cssName: "seven", type: "digit" },
+  { displayName: "8", cssName: "eight", type: "digit" },
+  { displayName: "9", cssName: "nine", type: "digit" },
+  { displayName: "0", cssName: "zero", type: "digit" },
+  { displayName: "Clear", cssName: "clear", type: "function" },
+  { displayName: "+", cssName: "add", type: "function" },
+  { displayName: "-", cssName: "subtract", type: "function" },
+  { displayName: "X", cssName: "multiply", type: "function" },
+  { displayName: "/", cssName: "divide", type: "function" },
+  { displayName: "=", cssName: "equal", type: "function" },
+];
+
+buttons.forEach(function (button) {
+  const btn = document.createElement("button");
+  btn.textContent = button.displayName;
+  btn.classList.add(button.type);
+  btn.style.gridArea = button.cssName;
+  calcBody.appendChild(btn);
+});
