@@ -1,0 +1,88 @@
+#calcBody {
+  background-color: gray;
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 20px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "message message message message message"
+    "seven eight nine . add"
+    "four five six . subtract"
+    "one two three . multiply"
+    "clear zero . . divide";
+  padding: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#messageBox {
+  grid-area: message;
+  text-align: right;
+}
+
+#message {
+  margin-right: 5px;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#six {
+  grid-area: six;
+}
+
+#five {
+  grid-area: five;
+}
+
+#four {
+  grid-area: four;
+}
+
+#three {
+  grid-area: three;
+}
+
+#two {
+  grid-area: two;
+}
+
+#one {
+  grid-area: one;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#add {
+  grid-area: add;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#clear {
+  grid-area: clear;
+}
