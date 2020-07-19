@@ -46,12 +46,12 @@ const buttons = [
   { displayName: "8", cssName: "eight", type: "digit" },
   { displayName: "9", cssName: "nine", type: "digit" },
   { displayName: "0", cssName: "zero", type: "digit" },
-  { displayName: "Clear", cssName: "clear", type: "function" },
+  { displayName: "Clear", cssName: "clear", type: "clear" },
   { displayName: "+", cssName: "add", type: "function" },
   { displayName: "-", cssName: "subtract", type: "function" },
   { displayName: "X", cssName: "multiply", type: "function" },
   { displayName: "/", cssName: "divide", type: "function" },
-  { displayName: "=", cssName: "equal", type: "function" },
+  { displayName: "=", cssName: "equal", type: "operator" },
 ];
 
 buttons.forEach(function (button) {

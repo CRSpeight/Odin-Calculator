@@ -61,6 +61,16 @@ button {
   color: white;
 }
 
+.operator {
+  background-color: #f15a2b;
+  color: white;
+}
+
+.clear {
+  background-color: #af343c;
+  color: white;
+}
+
 body {
   background-color: lightgray;
 }
