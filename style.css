@@ -1,6 +1,6 @@
 #calcBody {
   background-color: rgb(68, 68, 68);
-  width: 40rem;
+  width: 30rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 20px 1fr 1fr;
@@ -51,6 +51,10 @@ button {
   -webkit-box-shadow: inset 0px 0px 5px 7px rgba(0, 0, 0, 0.19);
   box-shadow: inset 0px 0px 5px 7px rgba(0, 0, 0, 0.19);
   font-weight: bold;
+}
+
+button:focus {
+  outline: 0px;
 }
 
 .function {
