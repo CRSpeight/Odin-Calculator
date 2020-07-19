@@ -1,5 +1,5 @@
 #calcBody {
-  background-color: gray;
+  background-color: rgb(68, 68, 68);
   width: 50%;
   margin: 0 auto;
   display: grid;
@@ -52,7 +52,13 @@ button {
 }
 
 .function {
-  background-color: lightblue;
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+
+.digit {
+  background-color: rgb(122, 121, 121);
+  color: white;
 }
 
 body {
