@@ -11,12 +11,13 @@ function multiply(num1, num2) {
 }
 
 function divide(num1, num2) {
-  return num1 / num2;
+  let trueNum = num1 / num2;
+  return Math.round(trueNum * 1000) / 1000;
 }
 
 function operate(num1, operator, num2) {
-  num1 = parseInt(num1);
-  num2 = parseInt(num2);
+  num1 = Number(num1);
+  num2 = Number(num2);
   switch (operator) {
     case "+":
       return add(num1, num2);
