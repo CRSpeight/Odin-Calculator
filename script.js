@@ -81,6 +81,18 @@ function equals() {
   messageUpdater(parsedQuery);
 }
 
+function back() {
+  if (currMessage.length < 2) {
+    clearMessage();
+  } else {
+    let newStr = currMessage.slice(0);
+    newStr = newStr.split("");
+    newStr.pop();
+    clearMessage();
+    messageUpdater(newStr.join(""));
+  }
+}
+
 const calcBody = document.querySelector("#calcBody");
 
 const buttons = [
@@ -100,6 +112,8 @@ const buttons = [
   { displayName: "x", cssName: "multiply", type: "function" },
   { displayName: "/", cssName: "divide", type: "function" },
   { displayName: "=", cssName: "equal", type: "operator" },
+  { displayName: ".", cssName: "dot", type: "function" },
+  { displayName: "<-", cssName: "back", type: "back" },
 ];
 
 buttons.forEach(function (button) {
@@ -117,6 +131,9 @@ buttons.forEach(function (button) {
       break;
     case "operator":
       btn.addEventListener("click", () => equals());
+      break;
+    case "back":
+      btn.addEventListener("click", () => back());
       break;
     default:
       break;

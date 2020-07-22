@@ -10,7 +10,7 @@
     "seven eight nine . add equal"
     "four five six . subtract equal"
     "one two three . multiply equal"
-    ". zero . . divide clear";
+    "back zero dot . divide clear";
   column-gap: 4px;
   row-gap: 4px;
   padding: 10px;
@@ -62,6 +62,7 @@ button:focus {
   outline: 0px;
 }
 
+.back,
 .function {
   background-color: rgb(49, 49, 49);
   color: white;
